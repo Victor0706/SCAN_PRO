@@ -1,0 +1,19 @@
+main {
+    width: 100%;
+    background-color: white;
+}
+
+.main-content {
+    padding-top: 93px;
+    max-width: 1440px;
+    flex-grow: 1;
+}
+
+@media (max-width: 1360px) {
+
+    .main-content {
+        padding-top: 90px;
+        max-width: 375px;
+    }
+
+}

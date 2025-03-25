@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(0, 128, 111);
+    margin-left: -230px;
+    margin-right: -230px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    margin: 0 auto; 
+    padding: 0 130px;
+    
+}
+
+.address-block {
+    text-align: right;
+    line-height: 0.1;
+    color: white;
+}
+
+@media (max-width: 1360px) {
+
+    .footer-content {
+        max-width: 375px;
+        padding: 0 20px;
+    }
+}

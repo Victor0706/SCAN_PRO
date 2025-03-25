@@ -1,0 +1,32 @@
+.tariffs-block {
+    background-color: white;
+    margin: 0 auto; 
+    padding: 0 60px;
+    margin-bottom: 100px;
+    margin-left: -130px;
+}
+
+.tariffs-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: -80px;
+}
+
+@media (max-width: 1360px) {
+    .tariffs-block {
+        padding: 0 14px;
+        max-width: 375px;
+        margin-bottom: 30px;
+    }
+
+    .tariffs-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}

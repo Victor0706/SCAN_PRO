@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Ferry';
+    src: local('ferry'),
+    url('./fonts/ferry.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'InterRegular';
+    src: local('InterRegular'),
+    url('./fonts/InterRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InterMedium';
+    src: local('InterMedium'),
+    url('./fonts//InterMedium.ttf') fromat('truetype');
+}
+
+@font-face {
+    font-family: 'InterBold';
+    src: local('InterBold'),
+    url('./fonts//InterBold.ttf') fromat('truetype');
+}
+
+
+:root {
+    --scan-green: #029491;
+    --scan-black: #000000;
+    --scan-white: #FFFFFF;
+    --scan-yellow: #FFB64F;
+    --scan-light-blue: #7CE3E1;
+    --scan-blue: #5970FF;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+.font-face-ferry {
+    font-family: 'Ferry';
+}
+
+.font-face-inter {
+    font-family: 'InterRegular';
+}
+
+.font-face-inter-medium {
+    font-family: 'InterMedium';
+}
+
+.font-face-inter-bold {
+    font-family: 'InterBold';
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "InterRegular", sans-serif;
+    font-size: 14px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: Ferry;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: Ferry;
+    font-size: 45px;
+}
+
+.button {
+    width: 335px;
+    height: 59px;
+    border-radius: 5px;
+    font-family: 'InterRegular', sans-serif;
+    font-size: 22px;
+    color: var(--scan-white);
+    background-color: var(--scan-blue);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button.grey {
+    background-color: #D2D2D2;
+    color: var(--scan-black);
+}
+
+.button:not(:disabled):hover {
+    cursor: pointer;
+    background-color: var(--scan-light-blue);
+    color: var(--scan-black);
+}
+
+.button:disabled {
+    opacity: 0.5;
+  }
+
+input {
+    font-family: 'InterRegular', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 1360px) {
+    .app-container {
+        max-width: 375px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+        width: 274px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+}
+
+

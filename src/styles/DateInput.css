@@ -1,0 +1,63 @@
+.date-input-container {
+    display: flex;
+    gap: 10px;
+  }
+
+.form-field-date-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}  
+
+.date-error-message {
+    color: #FF5959;
+    font-size: 14px;
+    text-align: center;
+    width: 395px;
+    visibility: hidden;
+  }
+
+.form-field-date-inputs .error {
+  visibility: visible;
+}
+
+.error {
+  text-align: center;
+  color: #949494;
+}
+
+.date-input-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.react-datepicker {
+  font-size: 16px;
+}
+
+
+  @media (max-width: 1360px) {
+    .date-input-container {
+      flex-direction: column;
+    }
+
+    .date-error-message {
+      width: 335px;
+    }
+  }
